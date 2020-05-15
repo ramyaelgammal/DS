@@ -35,7 +35,8 @@ void ArrToList(tNode *&pbase, int A[], int size) {
     }
 }
 
-void dispList(const tNode *pNode) {
+void dispList(const tNode *pNode)
+{
     while (pNode) {
         cout << pNode->data << " ";
         pNode = pNode->next;
@@ -43,7 +44,8 @@ void dispList(const tNode *pNode) {
     cout << endl;
 }
 
-void rDispList(const tNode *pNode) {
+void rDispList(const tNode *pNode)
+{
     if (pNode) {
         cout << pNode->data << " ";
         rDispList(pNode->next);
@@ -159,7 +161,7 @@ tNode* rSearch(tNode *pNode, int key) {
 }
 
 void insertAfter(tNode *&pBase, int pos, int val) // pos in LL starts from 0
-        {
+{
     tNode *pNode, *pCurr;
     pNode = createNode(val);
 
@@ -575,7 +577,7 @@ int main() {
     //dispList(head);
     cout << "\nBefore concat: does head has a loop? "<<isLoop(head);
     concat(head, head);
-    cout << "\nafter concat: does head has a loop? "<<isLoop(root3);
+    cout << "\nafter concat: does head has a loop? "<<isLoop(root3)<<endl;
 
     return 0;
 }
