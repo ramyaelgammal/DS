@@ -8,8 +8,8 @@
 			"args": [
 				"-g",
 				// "${file}",
-				"${fileDirname}/circ_list_driver.cpp",
-				"${fileDirname}/circular_linked_list.cpp",
+				"${fileDirname}/doubly.cpp",
+				"${fileDirname}/doubly_linked_list.cpp",
 				"-o",
 				// "${fileDirname}/${fileBasenameNoExtension}"
 				"${fileDirname}/out"

@@ -64,6 +64,7 @@ Node* CircLnkdLst::getTail()
 }
 void CircLnkdLst::Display()
 {
+    if(head == nullptr) return;
     Node *pnode = head;
     do
     {

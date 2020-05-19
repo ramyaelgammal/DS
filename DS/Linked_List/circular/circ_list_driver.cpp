@@ -2,10 +2,8 @@
 #include "circular_linked_list.h"
 using namespace std;
 
-int main()
+void test1()
 {
-    system("color %");
-
     int A[] = {2,3,4,5,6};
     CircLnkdLst clist(A,5);
     // Display
@@ -23,7 +21,7 @@ int main()
 
     // Insert at index 3
     cout << "Insert at index 3:\n";
-    clist.insert(1,10);
+    clist.insert(3,10);
     clist.Display();
 
     // Delete element 0 (head)
@@ -40,6 +38,20 @@ int main()
     cout << "\nDelete elem at tail:\n";
     cout << "deleting: " << clist.remove(clist.count()-1) << endl;
     clist.Display();
+
+}
+
+void test2()
+{
+    CircLnkdLst clist;
+    clist.insert(0,5);
+    clist.Display();
+
+}
+int main()
+{
+    test1();
+    // test2();
 
    // cout<<"Hi\n\n"<<clist.count()<<endl;
     return 0;
